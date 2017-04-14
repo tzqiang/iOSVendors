@@ -7,6 +7,8 @@ build/
 DerivedData/
 
 ## Various settings
+.DS_Store
+*/build/*
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -15,7 +17,12 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata/
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
 
 ## Other
 *.moved-aside
@@ -28,6 +35,7 @@ xcuserdata/
 *.dSYM
 
 # CocoaPods
+Pods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
