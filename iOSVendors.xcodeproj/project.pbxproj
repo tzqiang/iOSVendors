@@ -33,6 +33,17 @@
 		EF3021DA1EA0C30B00AB0881 /* EJStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3021D91EA0C30B00AB0881 /* EJStringPicker.m */; };
 		EF3021DD1EA0C37D00AB0881 /* EJCityPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3021DC1EA0C37D00AB0881 /* EJCityPicker.m */; };
 		EF3021E01EA0C6DA00AB0881 /* EJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3021DF1EA0C6DA00AB0881 /* EJPopupViewController.m */; };
+		EF4EAA051EA73584008B82A3 /* NSArray+EJNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4EAA041EA73584008B82A3 /* NSArray+EJNetworkingMethods.m */; };
+		EF4EAA081EA735CB008B82A3 /* NSDictionary+EJNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4EAA071EA735CB008B82A3 /* NSDictionary+EJNetworkingMethods.m */; };
+		EF4EAA0B1EA7361A008B82A3 /* NSURLRequest+EJNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4EAA0A1EA7361A008B82A3 /* NSURLRequest+EJNetworkingMethods.m */; };
+		EF4EAA0E1EA73666008B82A3 /* EJApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4EAA0D1EA73666008B82A3 /* EJApiProxy.m */; };
+		EF4EAA141EA737EC008B82A3 /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4EAA131EA737EC008B82A3 /* MD5.m */; };
+		EF4EAA171EA73833008B82A3 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4EAA161EA73833008B82A3 /* RSA.m */; };
+		EF4EAA1A1EA738A0008B82A3 /* EJBaseApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4EAA191EA738A0008B82A3 /* EJBaseApiManager.m */; };
+		EF4EAA1D1EA7390C008B82A3 /* EJCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4EAA1C1EA7390C008B82A3 /* EJCache.m */; };
+		EF4EAA201EA73954008B82A3 /* EJCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4EAA1F1EA73954008B82A3 /* EJCacheObject.m */; };
+		EF4EAA231EA73987008B82A3 /* EJURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4EAA221EA73987008B82A3 /* EJURLResponse.m */; };
+		EF4EAA261EA739C5008B82A3 /* EJAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4EAA251EA739C5008B82A3 /* EJAppContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +122,29 @@
 		EF3021DC1EA0C37D00AB0881 /* EJCityPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCityPicker.m; sourceTree = "<group>"; };
 		EF3021DE1EA0C6DA00AB0881 /* EJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJPopupViewController.h; sourceTree = "<group>"; };
 		EF3021DF1EA0C6DA00AB0881 /* EJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJPopupViewController.m; sourceTree = "<group>"; };
+		EF3EA8881EA73AED00863220 /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
+		EF4EAA031EA73584008B82A3 /* NSArray+EJNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+EJNetworkingMethods.h"; sourceTree = "<group>"; };
+		EF4EAA041EA73584008B82A3 /* NSArray+EJNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+EJNetworkingMethods.m"; sourceTree = "<group>"; };
+		EF4EAA061EA735CB008B82A3 /* NSDictionary+EJNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+EJNetworkingMethods.h"; sourceTree = "<group>"; };
+		EF4EAA071EA735CB008B82A3 /* NSDictionary+EJNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+EJNetworkingMethods.m"; sourceTree = "<group>"; };
+		EF4EAA091EA7361A008B82A3 /* NSURLRequest+EJNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+EJNetworkingMethods.h"; sourceTree = "<group>"; };
+		EF4EAA0A1EA7361A008B82A3 /* NSURLRequest+EJNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+EJNetworkingMethods.m"; sourceTree = "<group>"; };
+		EF4EAA0C1EA73666008B82A3 /* EJApiProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJApiProxy.h; sourceTree = "<group>"; };
+		EF4EAA0D1EA73666008B82A3 /* EJApiProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJApiProxy.m; sourceTree = "<group>"; };
+		EF4EAA121EA737EC008B82A3 /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		EF4EAA131EA737EC008B82A3 /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5.m; sourceTree = "<group>"; };
+		EF4EAA151EA73833008B82A3 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		EF4EAA161EA73833008B82A3 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		EF4EAA181EA738A0008B82A3 /* EJBaseApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBaseApiManager.h; sourceTree = "<group>"; };
+		EF4EAA191EA738A0008B82A3 /* EJBaseApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBaseApiManager.m; sourceTree = "<group>"; };
+		EF4EAA1B1EA7390C008B82A3 /* EJCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCache.h; sourceTree = "<group>"; };
+		EF4EAA1C1EA7390C008B82A3 /* EJCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCache.m; sourceTree = "<group>"; };
+		EF4EAA1E1EA73954008B82A3 /* EJCacheObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCacheObject.h; sourceTree = "<group>"; };
+		EF4EAA1F1EA73954008B82A3 /* EJCacheObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCacheObject.m; sourceTree = "<group>"; };
+		EF4EAA211EA73987008B82A3 /* EJURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJURLResponse.h; sourceTree = "<group>"; };
+		EF4EAA221EA73987008B82A3 /* EJURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJURLResponse.m; sourceTree = "<group>"; };
+		EF4EAA241EA739C5008B82A3 /* EJAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAppContext.h; sourceTree = "<group>"; };
+		EF4EAA251EA739C5008B82A3 /* EJAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAppContext.m; sourceTree = "<group>"; };
 		F8A82BEFD58CF7654C0FAAA0 /* Pods-iOSVendors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSVendors.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSVendors/Pods-iOSVendors.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,6 +353,8 @@
 		EF3021C81EA0BCB200AB0881 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				EF4EAA0F1EA737DB008B82A3 /* Security */,
+				EF4EA9FA1EA73549008B82A3 /* Networking */,
 				EF3021C91EA0BCB200AB0881 /* Hint */,
 			);
 			path = Vendors;
@@ -355,6 +391,123 @@
 				EF3021D91EA0C30B00AB0881 /* EJStringPicker.m */,
 			);
 			path = Picker;
+			sourceTree = "<group>";
+		};
+		EF4EA9FA1EA73549008B82A3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EA9FB1EA73549008B82A3 /* Categories */,
+				EF4EA9FC1EA73549008B82A3 /* Components */,
+				EF4EAA011EA73549008B82A3 /* Customs */,
+				EF3EA8881EA73AED00863220 /* Networking.h */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EF4EA9FB1EA73549008B82A3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EAA031EA73584008B82A3 /* NSArray+EJNetworkingMethods.h */,
+				EF4EAA041EA73584008B82A3 /* NSArray+EJNetworkingMethods.m */,
+				EF4EAA061EA735CB008B82A3 /* NSDictionary+EJNetworkingMethods.h */,
+				EF4EAA071EA735CB008B82A3 /* NSDictionary+EJNetworkingMethods.m */,
+				EF4EAA091EA7361A008B82A3 /* NSURLRequest+EJNetworkingMethods.h */,
+				EF4EAA0A1EA7361A008B82A3 /* NSURLRequest+EJNetworkingMethods.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EF4EA9FC1EA73549008B82A3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EA9FD1EA73549008B82A3 /* APIProxy */,
+				EF4EA9FE1EA73549008B82A3 /* BaseApiManager */,
+				EF4EA9FF1EA73549008B82A3 /* CacheComponents */,
+				EF4EAA001EA73549008B82A3 /* URLResponse */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EF4EA9FD1EA73549008B82A3 /* APIProxy */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EAA0C1EA73666008B82A3 /* EJApiProxy.h */,
+				EF4EAA0D1EA73666008B82A3 /* EJApiProxy.m */,
+			);
+			path = APIProxy;
+			sourceTree = "<group>";
+		};
+		EF4EA9FE1EA73549008B82A3 /* BaseApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EAA181EA738A0008B82A3 /* EJBaseApiManager.h */,
+				EF4EAA191EA738A0008B82A3 /* EJBaseApiManager.m */,
+			);
+			path = BaseApiManager;
+			sourceTree = "<group>";
+		};
+		EF4EA9FF1EA73549008B82A3 /* CacheComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EAA1B1EA7390C008B82A3 /* EJCache.h */,
+				EF4EAA1C1EA7390C008B82A3 /* EJCache.m */,
+				EF4EAA1E1EA73954008B82A3 /* EJCacheObject.h */,
+				EF4EAA1F1EA73954008B82A3 /* EJCacheObject.m */,
+			);
+			path = CacheComponents;
+			sourceTree = "<group>";
+		};
+		EF4EAA001EA73549008B82A3 /* URLResponse */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EAA211EA73987008B82A3 /* EJURLResponse.h */,
+				EF4EAA221EA73987008B82A3 /* EJURLResponse.m */,
+			);
+			path = URLResponse;
+			sourceTree = "<group>";
+		};
+		EF4EAA011EA73549008B82A3 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EAA021EA73549008B82A3 /* AppContext */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		EF4EAA021EA73549008B82A3 /* AppContext */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EAA241EA739C5008B82A3 /* EJAppContext.h */,
+				EF4EAA251EA739C5008B82A3 /* EJAppContext.m */,
+			);
+			path = AppContext;
+			sourceTree = "<group>";
+		};
+		EF4EAA0F1EA737DB008B82A3 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EAA101EA737DB008B82A3 /* MD5 */,
+				EF4EAA111EA737DB008B82A3 /* RSA */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		EF4EAA101EA737DB008B82A3 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EAA121EA737EC008B82A3 /* MD5.h */,
+				EF4EAA131EA737EC008B82A3 /* MD5.m */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+		EF4EAA111EA737DB008B82A3 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				EF4EAA151EA73833008B82A3 /* RSA.h */,
+				EF4EAA161EA73833008B82A3 /* RSA.m */,
+			);
+			path = RSA;
 			sourceTree = "<group>";
 		};
 		F2D669E043D2625D9EB19AE4 /* Frameworks */ = {
@@ -648,19 +801,30 @@
 			files = (
 				EF3021E01EA0C6DA00AB0881 /* EJPopupViewController.m in Sources */,
 				EF3021C11EA0934400AB0881 /* EJVendorsViewController.m in Sources */,
+				EF4EAA051EA73584008B82A3 /* NSArray+EJNetworkingMethods.m in Sources */,
 				EF024A021EA0633600E97234 /* main.m in Sources */,
 				EF3021D41EA0C22000AB0881 /* EJPicker.m in Sources */,
+				EF4EAA231EA73987008B82A3 /* EJURLResponse.m in Sources */,
 				EF3021B01EA07B7400AB0881 /* UIView+Position.m in Sources */,
 				EF3021D71EA0C2C600AB0881 /* EJDatePicker.m in Sources */,
+				EF4EAA1D1EA7390C008B82A3 /* EJCache.m in Sources */,
+				EF4EAA201EA73954008B82A3 /* EJCacheObject.m in Sources */,
+				EF4EAA141EA737EC008B82A3 /* MD5.m in Sources */,
+				EF4EAA171EA73833008B82A3 /* RSA.m in Sources */,
 				EF3021991EA0697100AB0881 /* EJAppDelegate.m in Sources */,
 				EF3021A71EA0715500AB0881 /* NSString+RegEx.m in Sources */,
 				EF3021AD1EA079DA00AB0881 /* UIImage+Extension.m in Sources */,
 				EF3021A01EA06C8A00AB0881 /* EJConfig.m in Sources */,
+				EF4EAA261EA739C5008B82A3 /* EJAppContext.m in Sources */,
 				EF3021CC1EA0BCDD00AB0881 /* EJHint.m in Sources */,
+				EF4EAA1A1EA738A0008B82A3 /* EJBaseApiManager.m in Sources */,
 				EF3021A31EA06DD200AB0881 /* EJEnum.m in Sources */,
 				EF3021B61EA07C9A00AB0881 /* JSON.m in Sources */,
 				EF3021DD1EA0C37D00AB0881 /* EJCityPicker.m in Sources */,
 				EF3021BD1EA0928200AB0881 /* EJTabBarController.m in Sources */,
+				EF4EAA081EA735CB008B82A3 /* NSDictionary+EJNetworkingMethods.m in Sources */,
+				EF4EAA0B1EA7361A008B82A3 /* NSURLRequest+EJNetworkingMethods.m in Sources */,
+				EF4EAA0E1EA73666008B82A3 /* EJApiProxy.m in Sources */,
 				EF3021C41EA0991800AB0881 /* EJGuideViewController.m in Sources */,
 				EF3021CF1EA0BFB700AB0881 /* EJHUDViewController.m in Sources */,
 				EF3021DA1EA0C30B00AB0881 /* EJStringPicker.m in Sources */,
