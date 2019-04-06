@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+/// AppDelegate
 @interface EJAppDelegate : UIResponder <UIApplicationDelegate>
 
+/// 主 window
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
 

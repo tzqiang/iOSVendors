@@ -1,13 +1,13 @@
 //
-//  EJConfig.h
+//  EJAPPConfig.h
 //  iOSVendors
 //
 //  Created by tzqiang on 2017/4/14.
 //  Copyright © 2017年 tzq. All rights reserved.
 //
 
-#ifndef EJConfig_h
-#define EJConfig_h
+#ifndef EJAPPConfig_h
+#define EJAPPConfig_h
 
 #import <CoreGraphics/CGBase.h>
 #import <Foundation/Foundation.h>
@@ -62,6 +62,19 @@
 
 #pragma mark - constant
 
+typedef NSString EJStringType;
+/// "0"
+extern EJStringType * const EJStringType0;
+/// "1"
+extern EJStringType * const EJStringType1;
+
+/// 回退到 root
+extern NSString * const EJRouterURLPop;
+/// 跳转到登录界面
+extern NSString * const EJRouterURLLogin;
+/// 跳转到首页
+extern NSString * const EJRouterURLHome;
+
 #pragma mark - system
 
 extern CGFloat const kStatusBarHight;
@@ -88,4 +101,9 @@ extern NSString * const kMembersID;
 extern NSString * const kNilValue;
 extern NSTimeInterval const kAgainGetVerCodeTime;
 
-#endif /* EJConfig_h */
+#pragma mark - Notification
+
+/// 退出登录通知
+extern NSString * const EJLogoutNotification;
+
+#endif /* EJAPPConfig_h */

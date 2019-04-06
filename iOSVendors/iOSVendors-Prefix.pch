@@ -10,7 +10,8 @@
 #define iOSVendors_Prefix_pch
 
 #import "EJMacro.h"
-#import "EJConfig.h"
+#import "EJAPPConfig.h"
+#import "EJAPIConfig.h"
 #import "EJEnum.h"
 #import "EJHint.h"
 

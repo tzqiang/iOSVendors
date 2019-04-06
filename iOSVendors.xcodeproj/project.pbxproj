@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		13E993EF44B579C5FD347B3A /* libPods-iOSVendors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B747ADBDA3F5916F4908ACB3 /* libPods-iOSVendors.a */; };
+		8143A44C22589F1500F1A5B9 /* EJAppDelegate+APNs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8143A44B22589F1500F1A5B9 /* EJAppDelegate+APNs.m */; };
+		8143A44F2258A7D100F1A5B9 /* EJAPIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8143A44E2258A7D100F1A5B9 /* EJAPIConfig.m */; };
+		8143A4522258EEB600F1A5B9 /* EJAppDelegate+ShortcutItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 8143A4512258EEB600F1A5B9 /* EJAppDelegate+ShortcutItems.m */; };
+		8143A4552258EEDF00F1A5B9 /* EJAppDelegate+SDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 8143A4542258EEDF00F1A5B9 /* EJAppDelegate+SDK.m */; };
 		9D19FAD61E74B66C77E2655D /* libPods-iOSVendorsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB89124B0821E3912A57AD1 /* libPods-iOSVendorsUITests.a */; };
 		BB86764931F8CCEFCD3DE5A1 /* libPods-iOSVendorsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B24CF1834EDFE210C7329 /* libPods-iOSVendorsTests.a */; };
 		EF024A021EA0633600E97234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF024A011EA0633600E97234 /* main.m */; };
@@ -15,7 +19,7 @@
 		EF024A261EA0633600E97234 /* iOSVendorsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF024A251EA0633600E97234 /* iOSVendorsUITests.m */; };
 		EF3021951EA0694100AB0881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3021941EA0694100AB0881 /* Assets.xcassets */; };
 		EF3021991EA0697100AB0881 /* EJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3021981EA0697100AB0881 /* EJAppDelegate.m */; };
-		EF3021A01EA06C8A00AB0881 /* EJConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EF30219F1EA06C8A00AB0881 /* EJConfig.m */; };
+		EF3021A01EA06C8A00AB0881 /* EJAPPConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EF30219F1EA06C8A00AB0881 /* EJAPPConfig.m */; };
 		EF3021A31EA06DD200AB0881 /* EJEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3021A21EA06DD200AB0881 /* EJEnum.m */; };
 		EF3021A71EA0715500AB0881 /* NSString+RegEx.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3021A61EA0715500AB0881 /* NSString+RegEx.m */; };
 		EF3021AD1EA079DA00AB0881 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3021AC1EA079DA00AB0881 /* UIImage+Extension.m */; };
@@ -70,6 +74,14 @@
 		528F0F1CB26F5A564E1D7F83 /* Pods-iOSVendorsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSVendorsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSVendorsUITests/Pods-iOSVendorsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6A0B24CF1834EDFE210C7329 /* libPods-iOSVendorsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSVendorsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5692180CC61BF32BCFD767 /* Pods-iOSVendorsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSVendorsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSVendorsUITests/Pods-iOSVendorsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8143A44A22589F1500F1A5B9 /* EJAppDelegate+APNs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EJAppDelegate+APNs.h"; sourceTree = "<group>"; };
+		8143A44B22589F1500F1A5B9 /* EJAppDelegate+APNs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EJAppDelegate+APNs.m"; sourceTree = "<group>"; };
+		8143A44D2258A7D100F1A5B9 /* EJAPIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAPIConfig.h; sourceTree = "<group>"; };
+		8143A44E2258A7D100F1A5B9 /* EJAPIConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAPIConfig.m; sourceTree = "<group>"; };
+		8143A4502258EEB600F1A5B9 /* EJAppDelegate+ShortcutItems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EJAppDelegate+ShortcutItems.h"; sourceTree = "<group>"; };
+		8143A4512258EEB600F1A5B9 /* EJAppDelegate+ShortcutItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EJAppDelegate+ShortcutItems.m"; sourceTree = "<group>"; };
+		8143A4532258EEDF00F1A5B9 /* EJAppDelegate+SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EJAppDelegate+SDK.h"; sourceTree = "<group>"; };
+		8143A4542258EEDF00F1A5B9 /* EJAppDelegate+SDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EJAppDelegate+SDK.m"; sourceTree = "<group>"; };
 		B747ADBDA3F5916F4908ACB3 /* libPods-iOSVendors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSVendors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB89124B0821E3912A57AD1 /* libPods-iOSVendorsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSVendorsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0249FD1EA0633600E97234 /* iOSVendors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSVendors.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,8 +98,8 @@
 		EF3021971EA0697100AB0881 /* EJAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAppDelegate.h; sourceTree = "<group>"; };
 		EF3021981EA0697100AB0881 /* EJAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAppDelegate.m; sourceTree = "<group>"; };
 		EF30219D1EA06C1B00AB0881 /* EJMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EJMacro.h; sourceTree = "<group>"; };
-		EF30219E1EA06C5F00AB0881 /* EJConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EJConfig.h; sourceTree = "<group>"; };
-		EF30219F1EA06C8A00AB0881 /* EJConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJConfig.m; sourceTree = "<group>"; };
+		EF30219E1EA06C5F00AB0881 /* EJAPPConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EJAPPConfig.h; sourceTree = "<group>"; };
+		EF30219F1EA06C8A00AB0881 /* EJAPPConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAPPConfig.m; sourceTree = "<group>"; };
 		EF3021A11EA06DC300AB0881 /* EJEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EJEnum.h; sourceTree = "<group>"; };
 		EF3021A21EA06DD200AB0881 /* EJEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJEnum.m; sourceTree = "<group>"; };
 		EF3021A51EA0715500AB0881 /* NSString+RegEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegEx.h"; sourceTree = "<group>"; };
@@ -266,6 +278,12 @@
 			children = (
 				EF3021971EA0697100AB0881 /* EJAppDelegate.h */,
 				EF3021981EA0697100AB0881 /* EJAppDelegate.m */,
+				8143A44A22589F1500F1A5B9 /* EJAppDelegate+APNs.h */,
+				8143A44B22589F1500F1A5B9 /* EJAppDelegate+APNs.m */,
+				8143A4502258EEB600F1A5B9 /* EJAppDelegate+ShortcutItems.h */,
+				8143A4512258EEB600F1A5B9 /* EJAppDelegate+ShortcutItems.m */,
+				8143A4532258EEDF00F1A5B9 /* EJAppDelegate+SDK.h */,
+				8143A4542258EEDF00F1A5B9 /* EJAppDelegate+SDK.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -274,8 +292,10 @@
 			isa = PBXGroup;
 			children = (
 				EF30219D1EA06C1B00AB0881 /* EJMacro.h */,
-				EF30219E1EA06C5F00AB0881 /* EJConfig.h */,
-				EF30219F1EA06C8A00AB0881 /* EJConfig.m */,
+				EF30219E1EA06C5F00AB0881 /* EJAPPConfig.h */,
+				EF30219F1EA06C8A00AB0881 /* EJAPPConfig.m */,
+				8143A44D2258A7D100F1A5B9 /* EJAPIConfig.h */,
+				8143A44E2258A7D100F1A5B9 /* EJAPIConfig.m */,
 				EF3021A11EA06DC300AB0881 /* EJEnum.h */,
 				EF3021A21EA06DD200AB0881 /* EJEnum.m */,
 			);
@@ -531,8 +551,7 @@
 				EF0249F91EA0633600E97234 /* Sources */,
 				EF0249FA1EA0633600E97234 /* Frameworks */,
 				EF0249FB1EA0633600E97234 /* Resources */,
-				A82F7636BDF781395E640A58 /* [CP] Embed Pods Frameworks */,
-				A8ED7F1CE5F429E7A616F910 /* [CP] Copy Pods Resources */,
+				7B2526FAF7DD0A380BD2E7EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -551,8 +570,6 @@
 				EF024A121EA0633600E97234 /* Sources */,
 				EF024A131EA0633600E97234 /* Frameworks */,
 				EF024A141EA0633600E97234 /* Resources */,
-				230E5FDC3299A39B15DED576 /* [CP] Embed Pods Frameworks */,
-				ED15CE0BE57D9876F6E8BBF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -572,8 +589,6 @@
 				EF024A1D1EA0633600E97234 /* Sources */,
 				EF024A1E1EA0633600E97234 /* Frameworks */,
 				EF024A1F1EA0633600E97234 /* Resources */,
-				7BC6DDC2144AFB9169F74140 /* [CP] Embed Pods Frameworks */,
-				4C4F30AD378CB29F4DE4413F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -592,8 +607,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = EJ;
-				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = tzq;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = tzqiang;
 				TargetAttributes = {
 					EF0249FC1EA0633600E97234 = {
 						CreatedOnToolsVersion = 8.0;
@@ -612,10 +627,11 @@
 				};
 			};
 			buildConfigurationList = EF0249F81EA0633600E97234 /* Build configuration list for PBXProject "iOSVendors" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -657,49 +673,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		230E5FDC3299A39B15DED576 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSVendorsTests/Pods-iOSVendorsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4C4F30AD378CB29F4DE4413F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSVendorsUITests/Pods-iOSVendorsUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		59F131966C73BC77280F45CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSVendors-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5CA02292952BAC359BF3BCBE /* [CP] Check Pods Manifest.lock */ = {
@@ -708,28 +697,42 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSVendorsUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7BC6DDC2144AFB9169F74140 /* [CP] Embed Pods Frameworks */ = {
+		7B2526FAF7DD0A380BD2E7EB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSVendors/Pods-iOSVendors-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSVendorsUITests/Pods-iOSVendorsUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSVendors/Pods-iOSVendors-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9EC2C4D4BFC29F7025ADDCE9 /* [CP] Check Pods Manifest.lock */ = {
@@ -738,58 +741,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSVendorsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A82F7636BDF781395E640A58 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSVendors/Pods-iOSVendors-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A8ED7F1CE5F429E7A616F910 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSVendors/Pods-iOSVendors-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ED15CE0BE57D9876F6E8BBF6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSVendorsTests/Pods-iOSVendorsTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -812,9 +773,10 @@
 				EF4EAA141EA737EC008B82A3 /* MD5.m in Sources */,
 				EF4EAA171EA73833008B82A3 /* RSA.m in Sources */,
 				EF3021991EA0697100AB0881 /* EJAppDelegate.m in Sources */,
+				8143A44F2258A7D100F1A5B9 /* EJAPIConfig.m in Sources */,
 				EF3021A71EA0715500AB0881 /* NSString+RegEx.m in Sources */,
 				EF3021AD1EA079DA00AB0881 /* UIImage+Extension.m in Sources */,
-				EF3021A01EA06C8A00AB0881 /* EJConfig.m in Sources */,
+				EF3021A01EA06C8A00AB0881 /* EJAPPConfig.m in Sources */,
 				EF4EAA261EA739C5008B82A3 /* EJAppContext.m in Sources */,
 				EF3021CC1EA0BCDD00AB0881 /* EJHint.m in Sources */,
 				EF4EAA1A1EA738A0008B82A3 /* EJBaseApiManager.m in Sources */,
@@ -822,11 +784,14 @@
 				EF3021B61EA07C9A00AB0881 /* JSON.m in Sources */,
 				EF3021DD1EA0C37D00AB0881 /* EJCityPicker.m in Sources */,
 				EF3021BD1EA0928200AB0881 /* EJTabBarController.m in Sources */,
+				8143A44C22589F1500F1A5B9 /* EJAppDelegate+APNs.m in Sources */,
 				EF4EAA081EA735CB008B82A3 /* NSDictionary+EJNetworkingMethods.m in Sources */,
+				8143A4522258EEB600F1A5B9 /* EJAppDelegate+ShortcutItems.m in Sources */,
 				EF4EAA0B1EA7361A008B82A3 /* NSURLRequest+EJNetworkingMethods.m in Sources */,
 				EF4EAA0E1EA73666008B82A3 /* EJApiProxy.m in Sources */,
 				EF3021C41EA0991800AB0881 /* EJGuideViewController.m in Sources */,
 				EF3021CF1EA0BFB700AB0881 /* EJHUDViewController.m in Sources */,
+				8143A4552258EEDF00F1A5B9 /* EJAppDelegate+SDK.m in Sources */,
 				EF3021DA1EA0C30B00AB0881 /* EJStringPicker.m in Sources */,
 				EF3021B31EA07C2700AB0881 /* UIView+Corner.m in Sources */,
 				EF3021C71EA0A26200AB0881 /* EJLoadingViewController.m in Sources */,
@@ -869,20 +834,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -916,20 +891,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -963,7 +948,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSVendors/iOSVendors-Prefix.pch";
 				INFOPLIST_FILE = iOSVendors/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eternal-just.iOSVendors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -980,7 +969,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSVendors/iOSVendors-Prefix.pch";
 				INFOPLIST_FILE = iOSVendors/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eternal-just.iOSVendors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -993,7 +986,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = iOSVendorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eternal-just.iOSVendorsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSVendors.app/iOSVendors";
@@ -1006,7 +1003,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = iOSVendorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eternal-just.iOSVendorsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSVendors.app/iOSVendors";
@@ -1018,7 +1019,11 @@
 			baseConfigurationReference = 6D5692180CC61BF32BCFD767 /* Pods-iOSVendorsUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = iOSVendorsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eternal-just.iOSVendorsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = iOSVendors;
@@ -1030,7 +1035,11 @@
 			baseConfigurationReference = 528F0F1CB26F5A564E1D7F83 /* Pods-iOSVendorsUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = iOSVendorsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eternal-just.iOSVendorsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = iOSVendors;

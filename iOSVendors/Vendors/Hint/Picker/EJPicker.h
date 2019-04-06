@@ -6,10 +6,10 @@
 //  Copyright © 2017年 tzq. All rights reserved.
 //
 
-#import <MMPopupView/MMPopupView.h>
+#import "MMPopupView.h"
 
 typedef void(^EJPickerDoneBlock)(id selectedValue);
-typedef void(^EJPickerCancelBlock)();
+typedef void(^EJPickerCancelBlock)(void);
 
 @interface EJPicker : MMPopupView
 

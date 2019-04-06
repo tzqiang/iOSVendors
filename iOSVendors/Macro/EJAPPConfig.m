@@ -1,12 +1,21 @@
 //
-//  EJConfig.m
+//  EJAPPConfig.m
 //  iOSVendors
 //
 //  Created by tzqiang on 2017/4/14.
 //  Copyright © 2017年 tzq. All rights reserved.
 //
 
-#import "EJConfig.h"
+#import "EJAPPConfig.h"
+
+#pragma mark - constant
+
+EJStringType * const EJStringType0 = @"0";
+EJStringType * const EJStringType1 = @"1";
+
+NSString * const EJRouterURLPop = @"EJ://pop";
+NSString * const EJRouterURLLogin = @"EJ://login";
+NSString * const EJRouterURLHome = @"EJ://home";
 
 #pragma mark - system
 
@@ -33,3 +42,6 @@ NSString * const kMembersID = @"MembersID";
 NSString * const kNilValue = @"";
 NSTimeInterval const kAgainGetVerCodeTime = 120.0;
 
+#pragma mark - Notification
+
+NSString * const EJLogoutNotification = @"EJLogoutNotification";

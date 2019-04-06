@@ -10,18 +10,21 @@
 
 @interface NSString (JSON)
 
+/// string 转 array || dictonary
 - (id)EJ_JSONObject;
 
 @end
 
 @interface NSArray (JSON)
 
+/// array 转 string
 - (NSString *)EJ_JSONString;
 
 @end
 
 @interface NSDictionary (JSON)
 
+/// dictonary 转 string
 - (NSString *)EJ_JSONString;
 
 @end

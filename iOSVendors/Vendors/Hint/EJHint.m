@@ -9,8 +9,6 @@
 #import "EJHint.h"
 
 #import "MBProgressHUD.h"
-
-#import "MBProgressHUD.h"
 #import "MMAlertView.h"
 #import "MMSheetView.h"
 
@@ -22,9 +20,32 @@
 
 @implementation EJAlert
 
++ (void)updateTitle:(NSString *)title
+             detail:(NSString *)detail
+              items:(NSArray<NSString *> *)items
+              click:(void (^)(NSInteger index))click {
+    NSMutableArray *buttonItem = [NSMutableArray array];
+    for (NSString *title in items) {
+        [buttonItem addObject:MMItemMake(title, MMItemTypeHighlight, click)];
+    }
+    
+    MMAlertView *alert = [[MMAlertView alloc] initWithTitle:title
+                                                     detail:detail
+                                                      items:buttonItem];
+    alert.showCompletionBlock = ^(MMPopupView *popupView, BOOL show) {
+        [MMPopupWindow sharedWindow].touchWildToHide = NO;
+    };
+    
+    alert.hideCompletionBlock = ^(MMPopupView *popupView, BOOL show) {
+        [MMPopupWindow sharedWindow].touchWildToHide = YES;
+    };
+    
+    [alert show];
+}
+
 + (void)title:(NSString *)title
        detail:(NSString *)detail
-        items:(NSArray *)items
+        items:(NSArray<NSString *> *)items
         click:(MMPopupItemHandler)click {
     NSMutableArray *buttonItem = [NSMutableArray array];
     for (NSString *title in items) {
@@ -37,66 +58,30 @@
     [alert show];
 }
 
-+ (void)title:(NSString *)title
-       detail:(NSString *)detail
-  placeholder:(NSString *)placeholder
-        click:(MMPopupInputHandler)click {
-    MMAlertView *alert = [[MMAlertView alloc] initWithInputTitle:title
-                                                          detail:detail
-                                                     placeholder:placeholder handler:click];
-    [alert show];
-}
-
 @end
-
-#pragma mark - ActionSheet
 
 @implementation EJActionSheet
 
 + (void)title:(NSString *)title
-        items:(NSArray *)items
+        items:(NSArray<NSString *> *)items
         click:(MMPopupItemHandler)click {
     NSMutableArray *buttonItem = [NSMutableArray array];
     for (NSString *title in items) {
-        [buttonItem addObject:MMItemMake(title, MMItemTypeHighlight, click)];
+        [buttonItem addObject:MMItemMake(title, MMItemTypeNormal, click)];
     }
     MMSheetView *sheet = [[MMSheetView alloc] initWithTitle:title
                                                       items:buttonItem];
     
-    sheet.hideAnimation = ^(MMPopupView *view) {
-        [UIView animateWithDuration:0.3 animations:^{
-            view.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, 0);
-        } completion:^(BOOL finished) {
-            [view removeFromSuperview];
-        }];
+    sheet.showCompletionBlock = ^(MMPopupView *popupView, BOOL show) {
+        //        [MMPopupWindow sharedWindow].touchWildToHide = NO;
+    };
+    
+    sheet.hideCompletionBlock = ^(MMPopupView *popupView, BOOL show) {
+        //        [MMPopupWindow sharedWindow].touchWildToHide = YES;
+        click(-1); //点击取消按钮的回调 inde = -1
     };
     
     [sheet show];
-}
-
-+ (void)stringPikerTitle:(NSString *)title
-                   items:(NSArray *)items
-                isSingle:(BOOL)single
-               clickDone:(void (^)(id selectedValue))click {
-    EJStringPicker *picker = [[EJStringPicker alloc] initWithDataSource:items doneBlock:click];
-    picker.titleString = [[NSAttributedString alloc] initWithString:title attributes:@{ NSFontAttributeName : FONT(16.f), NSForegroundColorAttributeName: HEX(0x333333)}];
-    if (!single) {
-        picker.pickerType = EJStringPickerTypeRange;
-    }
-    [picker configPiker];
-    [picker show];
-}
-
-+ (void)datePikerClickDone:(void (^)(id selectedValue))click {
-    EJDatePicker *picker = [[EJDatePicker alloc] initWithDoneBlock:click];
-    [picker configPiker];
-    [picker show];
-}
-
-+ (void)countySelectClick:(void (^)(id selectedValue))click {
-    EJCityPicker *picker = [[EJCityPicker alloc] initWithDoneBlock:click];
-    [picker configPiker];
-    [picker show];
 }
 
 @end
@@ -106,59 +91,48 @@
 @implementation UIView (HUD)
 
 - (void)showHUD {
-    MBProgressHUD *hud = [MBProgressHUD HUDForView:self];
-    if (hud) {
-        [hud hide:NO];
-        hud = nil;
-    }
-    hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
-    hud.mode = MBProgressHUDModeIndeterminate;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        MBProgressHUD *hud = [MBProgressHUD HUDForView:self];
+        if (hud) {
+            [hud hideAnimated:NO];
+            hud = nil;
+        }
+        hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
+        hud.mode = MBProgressHUDModeIndeterminate;
+        hud.bezelView.backgroundColor = color_999999;
+    });
 }
 
 - (void)hideHUD {
-    MBProgressHUD *hud = [MBProgressHUD HUDForView:self];
-    [hud hide:YES];
-}
-
-- (void)showHUDLoadingMask:(BOOL)mask {
-    MBProgressHUD *hud = [MBProgressHUD HUDForView:self];
-    if (hud) {
-        [hud hide:NO];
-        hud = nil;
-    }
-    hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
-    hud.mode = MBProgressHUDModeCustomView;
-    NSMutableArray *images = [NSMutableArray array];
-    UIImage *image;
-    for (int i = 0; i < 8; ++i) {
-        image = [UIImage imageNamed:[NSString stringWithFormat:@"loading%d", i]];
-        [images addObject:image];
-    }
-    UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.bounds = CGRectMake(0.f, 0.f, 37.f, 37.f);
-    imageView.animationImages = images;
-    imageView.animationDuration = 1.8f;
-    hud.customView = imageView;
-    [imageView startAnimating];
-    hud.dimBackground = mask;
-}
-
-- (void)hideHUDLoading {
-    MBProgressHUD *hud = [MBProgressHUD HUDForView:self];
-    [(UIImageView *)hud.customView stopAnimating];
-    [hud hide:YES];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        MBProgressHUD *hud = [MBProgressHUD HUDForView:self];
+        hud.bezelView.backgroundColor = color_999999;
+        
+        [hud hideAnimated:YES];
+    });
 }
 
 - (void)showHUDWithMessage:(NSString *)message {
-    MBProgressHUD *hud = [MBProgressHUD HUDForView:self];
-    if (hud) {
-        [hud hide:NO];
-        hud = nil;
-    }
-    hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
-    hud.mode = MBProgressHUDModeText;
-    hud.labelText = message;
-    [hud hide:YES afterDelay:2.f];
+    [self showHUDWithMessage:message afterDelay:1.5f];
+}
+
+- (void)showHUDWithMessage:(NSString *)message afterDelay:(NSTimeInterval)delay{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        MBProgressHUD *hud = [MBProgressHUD HUDForView:self];
+        if (hud) {
+            [hud hideAnimated:NO];
+            hud = nil;
+        }
+        hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
+        hud.mode = MBProgressHUDModeText;
+        hud.bezelView.backgroundColor = color_000000;
+        hud.bezelView.opaque = 1;
+        hud.label.font = font_16;
+        hud.label.textColor = color_ffffff;
+        hud.label.text = message;
+        hud.label.numberOfLines = 0;
+        [hud hideAnimated:YES afterDelay:delay];
+    });
 }
 
 @end

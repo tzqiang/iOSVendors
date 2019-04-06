@@ -71,26 +71,7 @@ NSString * const popupCell = @"popupCell";
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        [EJActionSheet datePikerClickDone:^(id selectedValue) {
-            NSDate *date = selectedValue;
-            [self.view showHUDWithMessage:date.description];
-        }];
-    } else if (indexPath.row == 1) {
-        [EJActionSheet stringPikerTitle:@"体重" items:@[@"50kg", @"60kg", @"70kg", @"80kg"] isSingle:YES clickDone:^(id selectedValue) {
-            NSString *value = [NSString stringWithFormat:@"value = %@",selectedValue[@"value"]];
-            [self.view showHUDWithMessage:value];
-        }];
-    } else if (indexPath.row == 2) {
-        [EJActionSheet stringPikerTitle:@"身高" items:@[@"150cm", @"160cm", @"170cm", @"180cm"] isSingle:NO clickDone:^(id selectedValue) {
-            NSString *value = [NSString stringWithFormat:@"row1 = %@, row2 = %@",selectedValue[@"value1"],selectedValue[@"value2"]];
-            [self.view showHUDWithMessage:value];
-        }];
-    } else if (indexPath.row == 3) {
-//        [EJActionSheet  countySelectClick:^(id selectedValue) {
-//            
-//        }];
-    }
+
 }
 
 #pragma mark - setter getter
