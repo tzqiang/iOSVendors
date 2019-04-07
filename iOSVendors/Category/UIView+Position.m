@@ -102,7 +102,6 @@
     self.center = center;
 }
 
-
 - (CGFloat)EJ_centerY {
     return self.center.y;
 }
@@ -111,6 +110,38 @@
     CGPoint center = self.center;
     center.y = EJ_centerY;
     self.center = center;
+}
+
+- (CGFloat)EJ_minX {
+    return self.EJ_left;
+}
+
+- (CGFloat)EJ_maxX {
+    return self.EJ_left + self.EJ_width;
+}
+
+- (CGFloat)EJ_minY {
+    return self.EJ_top;
+}
+
+- (CGFloat)EJ_maxY {
+    return self.EJ_top + self.EJ_height;
+}
+
+- (void)setEJ_minX:(CGFloat)EJ_minX {
+    self.EJ_left = EJ_minX;
+}
+
+- (void)setEJ_maxX:(CGFloat)EJ_maxX {
+    self.EJ_left = EJ_maxX - self.EJ_width;
+}
+
+- (void)setEJ_minY:(CGFloat)EJ_minY {
+    self.EJ_top = EJ_minY;
+}
+
+- (void)setEJ_maxY:(CGFloat)EJ_maxY {
+    self.EJ_top = EJ_maxY - self.EJ_height;
 }
 
 @end

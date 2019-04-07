@@ -12,6 +12,16 @@
 		8143A44F2258A7D100F1A5B9 /* EJAPIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8143A44E2258A7D100F1A5B9 /* EJAPIConfig.m */; };
 		8143A4522258EEB600F1A5B9 /* EJAppDelegate+ShortcutItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 8143A4512258EEB600F1A5B9 /* EJAppDelegate+ShortcutItems.m */; };
 		8143A4552258EEDF00F1A5B9 /* EJAppDelegate+SDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 8143A4542258EEDF00F1A5B9 /* EJAppDelegate+SDK.m */; };
+		81B65971225A30B600EFD9B2 /* UIView+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B65970225A30B600EFD9B2 /* UIView+Gradient.m */; };
+		81B65974225A315500EFD9B2 /* UIImage+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B65973225A315500EFD9B2 /* UIImage+Gradient.m */; };
+		81B65977225A323900EFD9B2 /* UIButton+ImageTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B65976225A323900EFD9B2 /* UIButton+ImageTitle.m */; };
+		81B6597A225A32F400EFD9B2 /* UIButton+ExpendBounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B65979225A32F400EFD9B2 /* UIButton+ExpendBounds.m */; };
+		81B6597D225A341800EFD9B2 /* NSString+Security.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B6597C225A341800EFD9B2 /* NSString+Security.m */; };
+		81B65980225A35F800EFD9B2 /* NSTimer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B6597F225A35F800EFD9B2 /* NSTimer+Block.m */; };
+		81B65983225A365500EFD9B2 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B65982225A365500EFD9B2 /* NSDate+Formatter.m */; };
+		81B65986225A377A00EFD9B2 /* UIViewController+Aop.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B65985225A377A00EFD9B2 /* UIViewController+Aop.m */; };
+		81B65989225A389B00EFD9B2 /* NSString+Timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B65988225A389B00EFD9B2 /* NSString+Timestamp.m */; };
+		81B6598C225A394F00EFD9B2 /* NSString+Pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B6598B225A394F00EFD9B2 /* NSString+Pinyin.m */; };
 		9D19FAD61E74B66C77E2655D /* libPods-iOSVendorsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB89124B0821E3912A57AD1 /* libPods-iOSVendorsUITests.a */; };
 		BB86764931F8CCEFCD3DE5A1 /* libPods-iOSVendorsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B24CF1834EDFE210C7329 /* libPods-iOSVendorsTests.a */; };
 		EF024A021EA0633600E97234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF024A011EA0633600E97234 /* main.m */; };
@@ -82,6 +92,26 @@
 		8143A4512258EEB600F1A5B9 /* EJAppDelegate+ShortcutItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EJAppDelegate+ShortcutItems.m"; sourceTree = "<group>"; };
 		8143A4532258EEDF00F1A5B9 /* EJAppDelegate+SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EJAppDelegate+SDK.h"; sourceTree = "<group>"; };
 		8143A4542258EEDF00F1A5B9 /* EJAppDelegate+SDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EJAppDelegate+SDK.m"; sourceTree = "<group>"; };
+		81B6596F225A30B600EFD9B2 /* UIView+Gradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradient.h"; sourceTree = "<group>"; };
+		81B65970225A30B600EFD9B2 /* UIView+Gradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradient.m"; sourceTree = "<group>"; };
+		81B65972225A315500EFD9B2 /* UIImage+Gradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Gradient.h"; sourceTree = "<group>"; };
+		81B65973225A315500EFD9B2 /* UIImage+Gradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Gradient.m"; sourceTree = "<group>"; };
+		81B65975225A323900EFD9B2 /* UIButton+ImageTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitle.h"; sourceTree = "<group>"; };
+		81B65976225A323900EFD9B2 /* UIButton+ImageTitle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitle.m"; sourceTree = "<group>"; };
+		81B65978225A32F400EFD9B2 /* UIButton+ExpendBounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ExpendBounds.h"; sourceTree = "<group>"; };
+		81B65979225A32F400EFD9B2 /* UIButton+ExpendBounds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ExpendBounds.m"; sourceTree = "<group>"; };
+		81B6597B225A341800EFD9B2 /* NSString+Security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Security.h"; sourceTree = "<group>"; };
+		81B6597C225A341800EFD9B2 /* NSString+Security.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Security.m"; sourceTree = "<group>"; };
+		81B6597E225A35F800EFD9B2 /* NSTimer+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Block.h"; sourceTree = "<group>"; };
+		81B6597F225A35F800EFD9B2 /* NSTimer+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Block.m"; sourceTree = "<group>"; };
+		81B65981225A365500EFD9B2 /* NSDate+Formatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
+		81B65982225A365500EFD9B2 /* NSDate+Formatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
+		81B65984225A377A00EFD9B2 /* UIViewController+Aop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Aop.h"; sourceTree = "<group>"; };
+		81B65985225A377A00EFD9B2 /* UIViewController+Aop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Aop.m"; sourceTree = "<group>"; };
+		81B65987225A389B00EFD9B2 /* NSString+Timestamp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Timestamp.h"; sourceTree = "<group>"; };
+		81B65988225A389B00EFD9B2 /* NSString+Timestamp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Timestamp.m"; sourceTree = "<group>"; };
+		81B6598A225A394F00EFD9B2 /* NSString+Pinyin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Pinyin.h"; sourceTree = "<group>"; };
+		81B6598B225A394F00EFD9B2 /* NSString+Pinyin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Pinyin.m"; sourceTree = "<group>"; };
 		B747ADBDA3F5916F4908ACB3 /* libPods-iOSVendors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSVendors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB89124B0821E3912A57AD1 /* libPods-iOSVendorsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSVendorsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0249FD1EA0633600E97234 /* iOSVendors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSVendors.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -309,12 +339,32 @@
 				EF3021B51EA07C9A00AB0881 /* JSON.m */,
 				EF3021A51EA0715500AB0881 /* NSString+RegEx.h */,
 				EF3021A61EA0715500AB0881 /* NSString+RegEx.m */,
+				81B6597B225A341800EFD9B2 /* NSString+Security.h */,
+				81B6597C225A341800EFD9B2 /* NSString+Security.m */,
+				81B65987225A389B00EFD9B2 /* NSString+Timestamp.h */,
+				81B65988225A389B00EFD9B2 /* NSString+Timestamp.m */,
+				81B6598A225A394F00EFD9B2 /* NSString+Pinyin.h */,
+				81B6598B225A394F00EFD9B2 /* NSString+Pinyin.m */,
+				81B6597E225A35F800EFD9B2 /* NSTimer+Block.h */,
+				81B6597F225A35F800EFD9B2 /* NSTimer+Block.m */,
+				81B65981225A365500EFD9B2 /* NSDate+Formatter.h */,
+				81B65982225A365500EFD9B2 /* NSDate+Formatter.m */,
 				EF3021AB1EA079DA00AB0881 /* UIImage+Extension.h */,
 				EF3021AC1EA079DA00AB0881 /* UIImage+Extension.m */,
+				81B65972225A315500EFD9B2 /* UIImage+Gradient.h */,
+				81B65973225A315500EFD9B2 /* UIImage+Gradient.m */,
 				EF3021AE1EA07B7400AB0881 /* UIView+Position.h */,
 				EF3021AF1EA07B7400AB0881 /* UIView+Position.m */,
 				EF3021B11EA07C2700AB0881 /* UIView+Corner.h */,
 				EF3021B21EA07C2700AB0881 /* UIView+Corner.m */,
+				81B6596F225A30B600EFD9B2 /* UIView+Gradient.h */,
+				81B65970225A30B600EFD9B2 /* UIView+Gradient.m */,
+				81B65975225A323900EFD9B2 /* UIButton+ImageTitle.h */,
+				81B65976225A323900EFD9B2 /* UIButton+ImageTitle.m */,
+				81B65978225A32F400EFD9B2 /* UIButton+ExpendBounds.h */,
+				81B65979225A32F400EFD9B2 /* UIButton+ExpendBounds.m */,
+				81B65984225A377A00EFD9B2 /* UIViewController+Aop.h */,
+				81B65985225A377A00EFD9B2 /* UIViewController+Aop.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -763,11 +813,14 @@
 				EF3021E01EA0C6DA00AB0881 /* EJPopupViewController.m in Sources */,
 				EF3021C11EA0934400AB0881 /* EJVendorsViewController.m in Sources */,
 				EF4EAA051EA73584008B82A3 /* NSArray+EJNetworkingMethods.m in Sources */,
+				81B65980225A35F800EFD9B2 /* NSTimer+Block.m in Sources */,
 				EF024A021EA0633600E97234 /* main.m in Sources */,
+				81B65986225A377A00EFD9B2 /* UIViewController+Aop.m in Sources */,
 				EF3021D41EA0C22000AB0881 /* EJPicker.m in Sources */,
 				EF4EAA231EA73987008B82A3 /* EJURLResponse.m in Sources */,
 				EF3021B01EA07B7400AB0881 /* UIView+Position.m in Sources */,
 				EF3021D71EA0C2C600AB0881 /* EJDatePicker.m in Sources */,
+				81B6597A225A32F400EFD9B2 /* UIButton+ExpendBounds.m in Sources */,
 				EF4EAA1D1EA7390C008B82A3 /* EJCache.m in Sources */,
 				EF4EAA201EA73954008B82A3 /* EJCacheObject.m in Sources */,
 				EF4EAA141EA737EC008B82A3 /* MD5.m in Sources */,
@@ -776,16 +829,21 @@
 				8143A44F2258A7D100F1A5B9 /* EJAPIConfig.m in Sources */,
 				EF3021A71EA0715500AB0881 /* NSString+RegEx.m in Sources */,
 				EF3021AD1EA079DA00AB0881 /* UIImage+Extension.m in Sources */,
+				81B6597D225A341800EFD9B2 /* NSString+Security.m in Sources */,
 				EF3021A01EA06C8A00AB0881 /* EJAPPConfig.m in Sources */,
 				EF4EAA261EA739C5008B82A3 /* EJAppContext.m in Sources */,
 				EF3021CC1EA0BCDD00AB0881 /* EJHint.m in Sources */,
 				EF4EAA1A1EA738A0008B82A3 /* EJBaseApiManager.m in Sources */,
+				81B65983225A365500EFD9B2 /* NSDate+Formatter.m in Sources */,
 				EF3021A31EA06DD200AB0881 /* EJEnum.m in Sources */,
 				EF3021B61EA07C9A00AB0881 /* JSON.m in Sources */,
+				81B65971225A30B600EFD9B2 /* UIView+Gradient.m in Sources */,
 				EF3021DD1EA0C37D00AB0881 /* EJCityPicker.m in Sources */,
 				EF3021BD1EA0928200AB0881 /* EJTabBarController.m in Sources */,
+				81B6598C225A394F00EFD9B2 /* NSString+Pinyin.m in Sources */,
 				8143A44C22589F1500F1A5B9 /* EJAppDelegate+APNs.m in Sources */,
 				EF4EAA081EA735CB008B82A3 /* NSDictionary+EJNetworkingMethods.m in Sources */,
+				81B65989225A389B00EFD9B2 /* NSString+Timestamp.m in Sources */,
 				8143A4522258EEB600F1A5B9 /* EJAppDelegate+ShortcutItems.m in Sources */,
 				EF4EAA0B1EA7361A008B82A3 /* NSURLRequest+EJNetworkingMethods.m in Sources */,
 				EF4EAA0E1EA73666008B82A3 /* EJApiProxy.m in Sources */,
@@ -793,7 +851,9 @@
 				EF3021CF1EA0BFB700AB0881 /* EJHUDViewController.m in Sources */,
 				8143A4552258EEDF00F1A5B9 /* EJAppDelegate+SDK.m in Sources */,
 				EF3021DA1EA0C30B00AB0881 /* EJStringPicker.m in Sources */,
+				81B65977225A323900EFD9B2 /* UIButton+ImageTitle.m in Sources */,
 				EF3021B31EA07C2700AB0881 /* UIView+Corner.m in Sources */,
+				81B65974225A315500EFD9B2 /* UIImage+Gradient.m in Sources */,
 				EF3021C71EA0A26200AB0881 /* EJLoadingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
